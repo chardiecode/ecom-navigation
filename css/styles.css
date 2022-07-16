@@ -82,10 +82,15 @@
   margin: 0;
   padding: 0;
 }
+
 .header ul li {
   list-style: none;
-  border-right: 1px solid #ddd;
   padding: 0 5px;
+  cursor: pointer;
+}
+
+.header ul.rc {
+  border-right: 1px solid #ddd;
 }
 
 .header ul li:last-child {
