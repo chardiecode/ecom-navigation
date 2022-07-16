@@ -1,18 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
 * {
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  /* font-size: 0.8rem; */
+}
+
+span {
+  font-size: 0.8rem;
 }
 
 .primary-color {
-  background-color: #ee4d2d;
+  background-color: #fb5533;
 }
 
 .container-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  transform: translateZ(0);
-  z-index: 100;
+  padding: 3px 5rem;
 }
 
 .bg-primary {
@@ -38,9 +46,14 @@
   flex: 1;
 }
 
-/* .navbar {
-  max-width: 1200px;
-} */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateZ(0);
+  z-index: 100;
+}
 
 .navbar div {
   display: flex;
@@ -48,8 +61,16 @@
   align-items: center;
 }
 
+.right-navbar i {
+  font-size: 15px;
+}
+
 .flex {
   display: flex;
+}
+
+.w-inherit {
+  width: inherit;
 }
 
 .width-full {
@@ -74,8 +95,11 @@
 }
 
 .header {
-  /* padding: 1rem 0; */
-  height: 35px;
+  height: 30px;
+}
+
+.main {
+  margin-top: 1.2rem;
 }
 
 .header ul {
@@ -83,16 +107,129 @@
   padding: 0;
 }
 
-.header ul li {
+.navbar ul li {
   list-style: none;
-  padding: 0 5px;
-  cursor: pointer;
+  padding: 0 8px;
 }
 
-.header ul.rc {
+.navbar ul li a:hover {
+  color: #ddd;
+}
+
+.header ul.rc li {
+  display: flex;
   border-right: 1px solid #ddd;
+  /* line-height: 1; */
+  align-items: center;
 }
 
 .header ul li:last-child {
   border: none;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.relative {
+  position: relative;
+}
+
+.search-form input {
+  padding: 12px 10px;
+  border-radius: 2px;
+  border: none;
+}
+
+.search-icon {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.search-icon i {
+  font-size: 1rem;
+  padding: 10px 20px;
+}
+
+.logo-container {
+  /* min-width: 140px; */
+  position: relative;
+  top: -10px;
+  cursor: pointer;
+}
+
+.logo-container span {
+  font-weight: bold;
+  margin-left: 3px;
+  font-size: 1.4rem;
+}
+
+.logo-container .logo {
+  font-size: 3rem;
+  position: relative;
+  top: -4px;
+}
+
+.logo-container .logo-name {
+  font-size: 1.5rem;
+  margin-left: 7px;
+}
+
+.block {
+  display: block !important;
+}
+
+.socials .fa-brands {
+  font-size: 15px;
+  margin: 0 4px;
+}
+
+.cart i {
+  font-size: 1.4rem;
+}
+
+.sign-up {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+}
+
+.border-right {
+  border-right: 1px solid #ddd;
+}
+
+.categories ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.categories ul li {
+  margin: 0;
+}
+
+.categories ul li:first-child {
+  padding: 0;
+}
+
+.categories ul li span {
+  font-size: 0.7rem;
+}
+
+.hover:hover {
+  opacity: 0.9;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+/* Medium devices */
+@media only screen and (max-width: 720px) {
+  .container-wrapper {
+    padding: 3px 1rem;
+  }
 }

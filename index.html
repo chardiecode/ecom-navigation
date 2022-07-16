@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ecommerce navbar</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300"
+      rel="stylesheet"
+      type="text/css"
+    />
     <link href="fontawesome-free-6.1.1-web/css/all.css" rel="stylesheet" />
   </head>
   <body>
@@ -13,35 +18,114 @@
       <div class="header">
         <div class="width-50 align-left">
           <ul class="ul flex rc">
-            <li><span>Seller center</span></li>
-            <li><span>Sell on us</span></li>
-            <li><span>Download</span></li>
             <li>
-              <span>
-                Follow us on <span><i class="fa-brands fa-facebook"></i> </span>
-                <span> <i class="fa-brands fa-instagram-square"></i></span>
+              <span><a href="#">Seller center</a></span>
+            </li>
+            <li>
+              <span><a href="#">Sell on us</a></span>
+            </li>
+            <li>
+              <span><a href="#">Download</a></span>
+            </li>
+            <li>
+              <span class="socials">
+                Follow us on
+                <a href="#"
+                  ><span><i class="fa-brands fa-facebook"></i> </span
+                ></a>
+
+                <a href="#"
+                  ><span><i class="fa-brands fa-instagram-square"></i></span
+                ></a>
               </span>
             </li>
           </ul>
         </div>
-        <div class="width-50 align-right">
+        <div class="width-50 align-right right-navbar">
           <ul class="flex">
-            <li>Notifications</li>
-            <li>Help</li>
-            <li>English</li>
-            <li>Sign up</li>
-            <li>Login</li>
+            <li>
+              <span
+                ><a href="#"
+                  ><i class="fa-regular fa-bell"></i>&nbsp; Notifications</a
+                ></span
+              >
+            </li>
+            <li>
+              <span
+                ><a href=""
+                  ><i class="fa-regular fa-circle-question"></i>&nbsp; Help</a
+                ></span
+              >
+            </li>
+            <li>
+              <span
+                ><a href=""
+                  ><i class="fa-solid fa-globe"></i>&nbsp; English
+                  <i class="fa-solid fa-angle-down"></i></a
+              ></span>
+            </li>
+            <li class="bold border-right sign-up">
+              <span><a href="">Sign up</a></span>
+            </li>
+            <li class="bold">
+              <span><a href="">Login</a></span>
+            </li>
           </ul>
         </div>
       </div>
       <div class="main">
-        <div class="logo width-15">logo here</div>
-        <div class="middle flex-1 align-center width-70">
-          <div>search bar here</div>
-          <div class="break"></div>
-          <div>array of category text</div>
+        <div class="logo-container width-15">
+          <!-- <span class="logo"><i class="fa-brands fa-react"></i></span>
+          <span class="logo-name">ReactJs</span> -->
+          <img src="images/logo.png" alt="" width="50px" height="auto" />
+          <span class="logo-text">ReactJs</span>
         </div>
-        <div class="cart align-right flex-1 width-15">cart here</div>
+        <div class="middle flex-1 align-center width-70 block">
+          <div class="width-full relative">
+            <form action="#" class="width-full flex search-form">
+              <input
+                class="width-full"
+                type="text"
+                placeholder="Sign up and get P100 shipping discount!"
+              />
+              <span class="search-icon primary-color hover"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></span>
+            </form>
+          </div>
+          <div class="break"></div>
+          <div class="categories">
+            <ul class="flex">
+              <li>
+                <span><a href="">Dress</a></span>
+              </li>
+              <li>
+                <span><a href="">Croptop</a></span>
+              </li>
+              <li>
+                <span><a href="">Sandals</a></span>
+              </li>
+              <li>
+                <span><a href="">Face Mask</a></span>
+              </li>
+              <li>
+                <span><a href="">Sandals for women</a></span>
+              </li>
+              <li>
+                <span><a href="">Bag</a></span>
+              </li>
+              <li>
+                <span><a href="">Aqua Flask</a></span>
+              </li>
+              <li>
+                <span><a href="">Shoes For Women</a></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="cart align-right flex-1 width-15 align-center pointer">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
       </div>
     </div>
   </body>
